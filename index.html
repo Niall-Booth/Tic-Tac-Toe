@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tic Tac Toe</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container-fluid p-5 bg-dark text-white text-center">
+            <h1 class="display-5">Welcome to Tic Tac Toe</h1>
+        </div>
+        <div class="vh-100 d-flex flex-column flex-md-row justify-content-center align-items-center position-relative" id="main">
+            <div id="playerWinAlert" class="alert alert-success alert-dismissible position-absolute d-none">
+                <button type="button" class="btn-close game-reset"></button>
+                <strong>Well Done!</strong> You Win!
+            </div>
+            <div id="botWinAlert" class="alert alert-danger alert-dismissible position-absolute d-none">
+                <button type="button" class="btn-close game-reset"></button>
+                <strong>Better Luck Next Time!</strong> Come on we can't let the Clankers Win
+            </div>
+            <div id="drawAlert" class="alert alert-warning alert-dismissible position-absolute d-none">
+                <button type="button" class="btn-close game-reset"></button>
+                <strong>Draw!</strong> You and the Ai are evenly matched
+            </div>
+            <div class="card m-auto d-flex justify-content-center align-items-center p-5">
+                <h1 class="display-5">Player Score:</h1>
+                <h5 class="display-5" id="player-score">0</h5>
+            </div>
+            <div id="tic-tac-toe-grid" class="me-5">
+                <div class="row">
+                    <button class="btn btn-primary col-4 grid-button" id="1"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="2"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="3"><h1>-</h1></button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary col-4 grid-button" id="4"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="5"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="6"><h1>-</h1></button>
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary col-4 grid-button" id="7"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="8"><h1>-</h1></button>
+                    <button class="btn btn-primary col-4 grid-button" id="9"><h1>-</h1></button>
+                </div>
+            </div>
+            <div class="card m-auto d-flex justify-content-center align-items-center p-5">
+                <h1 class="display-5">Ai Score:</h1>
+                <h5 class="display-5" id="ai-score">0</h5>
+            </div>
+        </div>
+        <div class="container-fluid bg-primary d-flex justify-content-center align-items-center text-white">
+            <h1 class="display-5 m-0">Tic Tac Toe</h1>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>
